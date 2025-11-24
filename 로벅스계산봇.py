@@ -6,7 +6,7 @@ import os
 from enum import Enum
 
 BOT_TOKEN = '디코봇넣기'
-로벅스_가격_단위 = 10000
+로벅스_가격_단위 = 10000 #1000로벅스당 원화 가격
 DATA_FILE = 'guild_data.json'
 
 intents = discord.Intents.default()
@@ -348,3 +348,4 @@ async def 로벅스계산기_슬래시_error(interaction: discord.Interaction, e
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 bot.run(BOT_TOKEN)
+
